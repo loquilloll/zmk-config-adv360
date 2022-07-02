@@ -14,6 +14,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     keymap {
@@ -33,12 +34,12 @@
 
         layer_Layer__1 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans
+ &bt BT_CLR     &kp F1     &kp F2    &kp F3    &kp F4     &kp F5               &kp F6    &kp F7     &kp F8     &kp F9      &kp F10   &kp F11
+     &trans   &kp EXCL     &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS    &kp EQUAL   &kp F12
+     &trans   &kp LPAR   &kp RPAR  &kp LBRC  &kp RBRC  &kp UNDER             &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &kp KP_PLUS  &kp HOME
+     &trans  &kp TILDE  &kp GRAVE  &kp LBKT  &kp RBKT     &trans               &trans    &trans     &trans     &trans        &kp N     &kp M   &trans     &trans  &kp KP_MINUS  &kp END
+     &trans    &kp INS     &trans    &trans    &trans     &trans               &trans    &trans     &trans     &trans       &trans    &trans  &kp DOT  &kp ENTER
+     &trans     &trans
             >;
         };
 
